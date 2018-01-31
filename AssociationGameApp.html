@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Association Game</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="AssociationGameApp.css">
+</head>
+<body>
+
+<div id="root"></div>
+<script> document.addEventListener("DOMContentLoaded", function(event) { console.log("DOM fully loaded and parsed"); }); </script>
+
+<script src="https://fb.me/react-0.13.3.js"></script>
+
+
+<script src="../../GameApp/web/AppHelper.js"></script>
+<script src="GameComponent.js"></script>
+<script src="RowComponent.js"></script>
+<script src="ColumnComponent.js"></script>
+
+<script > 
+
+React.render(React.createElement(GameComponent,
+		AppHelper.appProps({ })
+		), document.getElementById('root')
+);
+
+ </script>
+</body>  
+</html>
